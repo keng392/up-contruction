@@ -1,0 +1,208 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<style>
+    .carousel .carousel-item img {
+        height: 570px;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .carousel .carousel-item::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+    }
+
+    .hero-navbar {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.639);
+        position: absolute;
+        z-index: 2;
+
+    }
+
+    .hero-content h1 {
+        height: 130px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .hero-content p {
+        width: 600px;
+        height: 150px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .carousel-control-prev {
+        padding-right: 120px;
+    }
+
+    .carousel-control-next {
+        padding-left: 120px;
+    }
+
+    .btn {
+        width: 180px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.119);
+    }
+
+    .unline {
+        width: 100px;
+        height: 5px;
+        margin: auto;
+        background-color: yellow;
+    }
+
+    .dropdown-menu {
+        animation-duration: 0.75s;
+        animation-name: dropdown-menu;
+    }
+
+
+    @keyframes dropdown-menu {
+        from {
+            margin-top: 20px;
+        }
+
+        to {
+            margin-top: 0px;
+        }
+
+    }
+ .dropdown:hover .dropdown-menu{
+         display: block;
+    }
+    .navbar-nav:hover .nav-link{ 
+      color: yellow;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="hero-navbar ">
+            <nav class="navbar navbar-expand-xl my-4 ">
+                <div class="container">
+                    <a class="navbar-brand  fw-bold text-white fs-3 " href="#">Upcontruction<span
+                            class="fw-bold text-warning">.</span></a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav ms-auto mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bold fs-6 ps-3 text-white" href="#"
+                                    aria-current="page">Home<span class="visually-hidden">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fw-bold fs-6 ps-3 text-white" href="#"
+                                    id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu bg-warning " aria-labelledby="dropdownId">
+                                    <a class="dropdown-item " href="#">dropdown 1</a>
+                                    <a class="dropdown-item" href="#">Deep dropdown</a>
+                                    <a class="dropdown-item" href="#">dropdown 2</a>
+                                    <a class="dropdown-item" href="#">dropdown 3</a>
+                                    <a class="dropdown-item" href="#">dropdown 4</a>
+                                </div>
+                            <li class="nav-item  ps-3 fw-bold fs-6 ">
+                                <a class="nav-link text-white" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item ps-3 fw-bold fs-6">
+                                <a class="nav-link text-white" href="#">SERVICES</a>
+                            </li>
+                            <li class="nav-item ps-3 fw-bold fs-6">
+                                <a class="nav-link text-white" href="#">PROJECTS</a>
+                            </li>
+                            <li class="nav-item ps-3 fw-bold fs-6">
+                                <a class="nav-link text-white" href="#">BLOG</a>
+                            </li>
+                            <li class="nav-item ps-3 fw-bold fs-6">
+                                <a class="nav-link text-white" href="#">CONTACT</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <div data-aos="fade-down">
+                    <h1 class="text-white fw-bold fs-1">Welcome to <br> Upcontruction
+                        <div class="unline mt-3"></div>
+                    </h1>
+                </div>
+                <div data-aos="fade-up">
+                    <p class="text-white fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                        repellendus explicabo amet, odio
+                        dicta cum, aliquam consequuntur aspernatur fuga, commodi illo rem error doloremque eum ullam
+                        laudantium
+                        cupiditate dignissimos nostrum! <br>
+                        <button type="button"
+                            class="btn btn-outline-warning mt-4 fw-bold w-40 h-40 text-white rounded-5">Get
+                            Started</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="col-xl-12">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="">
+                            <img src="img/hero-carousel-1.jpg" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="">
+                            <img src="img/hero-carousel-2.jpg" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="">
+                            <img src="img/hero-carousel-3.jpg" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="">
+                            <img src="img/hero-carousel-4.jpg" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="">
+                            <img src="img/hero-carousel-5.jpg" class="d-block w-100" alt="...">
+
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class=" carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
